@@ -1,0 +1,44 @@
+# Real-Time Face Mask Detection System (Live Camera)
+
+## Project Overview
+This project implements a real-time face mask detection system using computer vision techniques.  
+The system analyzes a live webcam feed to detect human faces and determines whether a person is wearing a face mask or not.
+
+The project is designed to demonstrate real-time video processing and object detection concepts using Python and OpenCV.
+
+## Objectives
+- To detect human faces from a live camera feed
+- To classify detected faces as **Mask** or **No Mask**
+- To demonstrate real-time computer vision processing
+- To build a practical and explainable system suitable for academic evaluation
+
+## Technologies Used
+- **Python 3**
+- **OpenCV**
+- **NumPy**
+
+## How the System Works
+
+### 1. Face Detection
+- The system uses a **Haar Cascade Classifier** to detect faces in each video frame.
+- Haar Cascade is a classical machine learning-based approach provided by OpenCV for object detection.
+- Each detected face is enclosed inside a bounding rectangle.
+
+### 2. Mask Detection Logic
+- Once a face is detected, the system analyzes the **lower half of the face**.
+- If the lower facial region appears darker (indicating a mask covering the mouth and nose), the system classifies it as **MASK**.
+- Otherwise, it is classified as **NO MASK**.
+
+### 3. Real-Time Processing
+- The webcam feed is processed frame-by-frame.
+- Detection and classification happen instantly, providing real-time output on screen.
+
+## How to Run the Project
+
+### Prerequisites
+- Python 3 installed
+- OpenCV and NumPy installed
+
+### Steps to Execute
+```bash
+python live_camera.py
