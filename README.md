@@ -59,17 +59,52 @@ The system operates in real time using the following steps:
 
 - Python 3 installed  
 - Required libraries:
-  - OpenCV
-  - NumPy  
+- OpenCV
+- NumPy  
 
-Install dependencies using:
-```bash
-pip install opencv-python numpy
+## Project Structure
+-Clone or download the repository
+-Ensure the Haar Cascade XML file is present
+-Run the Python script:
+  python live_camera.py
+-The webcam will open and display real-time mask detection results
 
-📌 Steps to Execute
-Clone or download the repository
-Ensure the Haar Cascade XML file is present
-Run the script:
-python live_camera.py
-The webcam will open and display real-time detection results 
- 
+## Output & Results
+-Live webcam feed with detected faces
+-Each face labeled as: MASK or NO MASK
+-Bounding boxes drawn around detected faces
+-Real-time classification with minimal delay
+
+## Project Structure
+Real-Time-Face-Mask-Detection/
+│
+├── live_camera.py
+├── haarcascade_frontalface_default.xml
+├── README.md
+└── requirements.txt
+
+## Limitations
+-Works best in good lighting conditions
+-Accuracy may decrease with:
+-Low-resolution cameras
+-Extreme face angles
+-Uses heuristic-based logic instead of deep learning
+
+## Future Enhancements
+-Implement CNN-based models for higher accuracy
+-Train a deep learning mask detection classifier
+-Improve robustness for different lighting conditions
+-Deploy as a desktop or web-based application
+
+## Learning Outcomes
+Through this internship project, I learned:
+-Basics of computer vision and image processing
+-Face detection using Haar Cascade Classifiers
+-Real-time video stream handling with OpenCV
+-Designing explainable and practical ML systems
+
+## Conclusion
+The Real-Time Face Mask Detection System demonstrates how computer vision techniques can be applied to real-world problems.
+This project serves as a strong foundation for understanding real-time object detection and can be extended using advanced deep learning approaches.
+
+
