@@ -75,14 +75,6 @@ The system operates in real time using the following steps:
 -Bounding boxes drawn around detected faces
 -Real-time classification with minimal delay
 
-## Project Structure
-Real-Time-Face-Mask-Detection/
-│
-├── live_camera.py
-├── haarcascade_frontalface_default.xml
-├── README.md
-└── requirements.txt
-
 ## Limitations
 -Works best in good lighting conditions
 -Accuracy may decrease with:
